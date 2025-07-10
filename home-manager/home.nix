@@ -14,6 +14,7 @@
   imports = [
     ./programs/nix
     ./programs/karabiner
+    ./programs/git
   ];
 
   programs.home-manager.enable = true;
