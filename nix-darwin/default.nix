@@ -42,16 +42,33 @@
   system.defaults = {
 
     NSGlobalDomain.AppleShowAllExtensions = true;
+    NSGlobalDomain.KeyRepeat = 1;
+    NSGlobalDomain.InitialKeyRepeat = 10;
+    NSGlobalDomain._HIHideMenuBar = true;
+    NSGlobalDomain."com.apple.trackpad.scaling" = 3.0;
+    
+    universalaccess.mouseDriverCursorSize = 3.0;
+    controlcenter.BatteryShowPercentage = true;
 
     finder = {
       AppleShowAllFiles = true;
       AppleShowAllExtensions = true;
+      ShowPathbar = true;
+      ShowStatusBar = true;
+      FXPreferredViewStyle = "clmv";
     };
 
     dock = {
       autohide = true;
       show-recents = false;
       orientation = "left";
+      autohide-delay = 0.0;
+      autohide-time-modifier = 0.5;
+    };
+
+    screencapture = {
+      location = "~/Desktop/screenshot";
+      type = "png";
     };
   };
 }

@@ -3,7 +3,7 @@ _: {
     enable = true;
     userName = "Shuya Kinjo";
     userEmail = "a8109058@gmail.com";
-    
+
     extraConfig = {
       init = {
         defaultBranch = "main";
@@ -16,6 +16,6 @@ _: {
         symlinks = true;
         quotepath = false;
       };
-    };    
+    };
   };
-} 
+}
