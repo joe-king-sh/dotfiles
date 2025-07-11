@@ -29,6 +29,12 @@ Or run directly:
 sudo nix run github:LnL7/nix-darwin --extra-experimental-features 'flakes nix-command' -- switch --flake ".#joe-king-sh"
 ```
 
+Install mise tools
+
+```bash
+mise install
+```
+
 ## Commands
 
 - `make switch` - Deploy system configuration (nix-darwin)

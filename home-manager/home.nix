@@ -10,18 +10,18 @@
     inherit username;
     homeDirectory = lib.mkForce homeDirectory;
     stateVersion = "24.11";
-    
+
     # Useful command-line tools
     packages = with pkgs; [
-      jq           # JSON processor
-      tree         # Directory tree display
-      htop         # System monitor
-      bat          # cat alternative with syntax highlighting
-      fd           # find alternative
-      ripgrep      # grep alternative
-      fzf          # Fuzzy finder
-      eza          # ls alternative
-      neofetch     # System information display
+      jq # JSON processor
+      tree # Directory tree display
+      htop # System monitor
+      bat # cat alternative with syntax highlighting
+      fd # find alternative
+      ripgrep # grep alternative
+      fzf # Fuzzy finder
+      eza # ls alternative
+      neofetch # System information display
     ];
   };
 
@@ -30,6 +30,9 @@
     ./programs/karabiner
     ./programs/git
     ./programs/zsh
+    ./programs/vscode
+    ./programs/mise
+    ./programs/claude
   ];
 
   programs.home-manager.enable = true;

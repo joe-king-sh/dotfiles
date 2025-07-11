@@ -18,6 +18,7 @@
       "cursor"
       "visual-studio-code"
       "android-studio"
+      "claude"
 
       # Terminal
       "warp"
@@ -44,9 +45,10 @@
 
     NSGlobalDomain = {
       AppleShowAllExtensions = true;
-      KeyRepeat = 1;
-      InitialKeyRepeat = 15;
+      KeyRepeat = 2;
+      InitialKeyRepeat = 18;
       "com.apple.trackpad.scaling" = 3.0;
+      _HIHideMenuBar = false;
     };
 
     universalaccess = {
@@ -77,7 +79,7 @@
       autohide-time-modifier = 0.5;
       expose-group-apps = true;
       expose-animation-duration = 0.1;
-  
+
       magnification = true;
       largesize = 80;
       tilesize = 48;

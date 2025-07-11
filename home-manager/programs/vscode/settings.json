@@ -1,0 +1,42 @@
+{
+	"editor.minimap.enabled": false,
+	"editor.formatOnSave": true,
+	"vim.useSystemClipboard": true,
+	"telemetry.telemetryLevel": "off",
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[nix]": {
+		"editor.defaultFormatter": "jnoortheen.nix-ide"
+	},
+	"extensions.recommendations": [
+		"ms-python.python",
+		"ms-vscode.vscode-typescript-next",
+		"jnoortheen.nix-ide",
+		"eamodio.gitlens",
+		"vscodevim.vim",
+		"shardulm94.trailing-spaces",
+		"esbenp.prettier-vscode",
+		"biomejs.biome",
+		"github.copilot",
+		"github.copilot-chat",
+		"anthropic.claude-code",
+		"zixuanchen.vitest.explorer",
+		"orta.vscode-jest",
+		"shd101wyy.markdown-preview-enhanced"
+	],
+	"window.commandCenter": true,
+	"workbench.colorTheme": "Cursor Dark Midnight",
+	"cursor.composer.shouldChimeAfterChatFinishes": true,
+	"cursor.composer.shouldAllowCustomModes": true,
+	"git.autofetch": true
+}
