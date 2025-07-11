@@ -53,5 +53,16 @@ error: could not set permissions on '/nix/var/nix/profiles/default' to 755: Oper
 3. Add your terminal app (Terminal, iTerm2, Warp, etc.)
 4. Restart terminal and retry
 
-https://github.com/nix-darwin/nix-darwin/issues/1049
+Related issue: https://github.com/nix-darwin/nix-darwin/issues/1049
 
+### Manual Configuration Required
+
+Some macOS settings cannot be configured via nix-darwin and require manual setup:
+
+#### Enable App Exposé (4-finger trackpad gestures)
+
+1. System Preferences → Trackpad → More Gestures
+2. Set "Mission Control" to "Swipe up with four fingers"
+3. Set "App Exposé" to "Swipe down with four fingers"
+
+Related issue: https://github.com/nix-darwin/nix-darwin/issues/967

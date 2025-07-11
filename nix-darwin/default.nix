@@ -41,13 +41,18 @@
   # macOS system settings
   system.defaults = {
 
-    NSGlobalDomain.AppleShowAllExtensions = true;
-    NSGlobalDomain.KeyRepeat = 1;
-    NSGlobalDomain.InitialKeyRepeat = 10;
-    NSGlobalDomain._HIHideMenuBar = true;
-    NSGlobalDomain."com.apple.trackpad.scaling" = 3.0;
-    
-    universalaccess.mouseDriverCursorSize = 3.0;
+    NSGlobalDomain = {
+      AppleShowAllExtensions = true;
+      KeyRepeat = 1;
+      InitialKeyRepeat = 10;
+      _HIHideMenuBar = true;
+      "com.apple.trackpad.scaling" = 3.0;
+    };
+
+    universalaccess = {
+      mouseDriverCursorSize = 4.0;
+    };
+
     controlcenter.BatteryShowPercentage = true;
 
     finder = {
@@ -58,12 +63,18 @@
       FXPreferredViewStyle = "clmv";
     };
 
+    trackpad = {
+      TrackpadThreeFingerDrag = true;
+    };
+
     dock = {
       autohide = true;
       show-recents = false;
       orientation = "left";
       autohide-delay = 0.0;
       autohide-time-modifier = 0.5;
+      expose-group-apps = true;
+      expose-animation-duration = 0.1;
     };
 
     screencapture = {
