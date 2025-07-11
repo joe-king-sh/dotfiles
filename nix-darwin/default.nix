@@ -30,6 +30,7 @@
       "slack"
       "zoom"
       "notion"
+      "gather"
 
       # Utility
       "1password"
@@ -44,8 +45,7 @@
     NSGlobalDomain = {
       AppleShowAllExtensions = true;
       KeyRepeat = 1;
-      InitialKeyRepeat = 10;
-      _HIHideMenuBar = true;
+      InitialKeyRepeat = 15;
       "com.apple.trackpad.scaling" = 3.0;
     };
 
@@ -53,7 +53,9 @@
       mouseDriverCursorSize = 4.0;
     };
 
-    controlcenter.BatteryShowPercentage = true;
+    controlcenter = {
+      BatteryShowPercentage = true;
+    };
 
     finder = {
       AppleShowAllFiles = true;
@@ -75,6 +77,10 @@
       autohide-time-modifier = 0.5;
       expose-group-apps = true;
       expose-animation-duration = 0.1;
+  
+      magnification = true;
+      largesize = 80;
+      tilesize = 48;
     };
 
     screencapture = {
