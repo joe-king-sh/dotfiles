@@ -71,6 +71,7 @@
       TrackpadThreeFingerDrag = true;
     };
 
+
     dock = {
       autohide = true;
       show-recents = false;

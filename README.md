@@ -61,14 +61,24 @@ error: could not set permissions on '/nix/var/nix/profiles/default' to 755: Oper
 
 Related issue: https://github.com/nix-darwin/nix-darwin/issues/1049
 
-### Manual Configuration Required
+## Manual Configuration
 
 Some macOS settings cannot be configured via nix-darwin and require manual setup:
 
-#### Enable App Exposé (4-finger trackpad gestures)
+### Enable App Exposé (4-finger trackpad gestures)
 
 1. System Preferences → Trackpad → More Gestures
 2. Set "Mission Control" to "Swipe up with four fingers"
 3. Set "App Exposé" to "Swipe down with four fingers"
 
 Related issue: https://github.com/nix-darwin/nix-darwin/issues/967
+
+### Disable Spotlight Keyboard Shortcuts (for Raycast compatibility)
+
+Spotlight's Cmd+Space shortcut conflicts with Raycast. Disable it manually:
+
+1. System Settings → Keyboard → Keyboard Shortcuts
+2. Select "Spotlight" in the left sidebar
+3. Uncheck "Show Spotlight search" (Cmd+Space)
+
+After disabling, configure Raycast to use Cmd+Space in the Raycast app preferences.

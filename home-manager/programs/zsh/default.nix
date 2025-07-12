@@ -58,7 +58,7 @@ _: {
     };
 
     # Initialization script
-    initExtra = ''
+    initContent = ''
       # Prompt settings
       autoload -U colors && colors
 
