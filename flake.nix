@@ -73,7 +73,7 @@
           ./nix-darwin/default.nix
           home-manager.darwinModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
+            home-manager.useGlobalPkgs = false;
             home-manager.useUserPackages = true;
             home-manager.users.${actualUsername} = import ./home-manager/home.nix;
             home-manager.extraSpecialArgs = specialArgs;
