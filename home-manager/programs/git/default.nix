@@ -15,7 +15,9 @@ _: {
         editor = "vim";
         symlinks = true;
         quotepath = false;
+        excludesfile = "~/.config/git/gitignore_global";
       };
     };
   };
+  home.file.".config/git/gitignore_global".source = ./gitignore_global;
 }
