@@ -93,6 +93,7 @@ _: {
       export FZF_DEFAULT_COMMAND='fd --type f'
       export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
       export FZF_ALT_C_COMMAND='fd --type d'
+      export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
 
       # bat settings
       export BAT_THEME="Dracula"

@@ -49,6 +49,7 @@
       InitialKeyRepeat = 18;
       "com.apple.trackpad.scaling" = 3.0;
       _HIHideMenuBar = false;
+      AppleInterfaceStyle = "Dark";
     };
 
     universalaccess = {
