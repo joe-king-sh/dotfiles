@@ -34,6 +34,7 @@
     ./programs/vscode
     ./programs/mise
     ./programs/claude
+    ./programs/vim
   ];
 
   programs.home-manager.enable = true;
