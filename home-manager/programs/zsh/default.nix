@@ -86,8 +86,23 @@ _: {
       setopt CORRECT_ALL
       setopt NO_BEEP
 
-      # Custom prompt
-      PROMPT='%F{green}%n@%m%f:%F{blue}%~%f$ '
+      # Git branch function for prompt
+      git_branch() {
+        local branch
+        branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+        if [ -n "$branch" ]; then
+          # Check if there are uncommitted changes
+          if git diff-index --quiet HEAD -- 2>/dev/null; then
+            echo " %F{green}($branch)%f"  # Clean
+          else
+            echo " %F{red}($branch)%f"    # Dirty
+          fi
+        fi
+      }
+
+      # Custom prompt with git branch
+      setopt PROMPT_SUBST
+      PROMPT='%F{green}%n@%m%f:%F{blue}%~%f$(git_branch)$ '
 
       # fzf settings
       export FZF_DEFAULT_COMMAND='fd --type f'
