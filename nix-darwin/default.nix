@@ -85,6 +85,10 @@
       tilesize = 48;
     };
 
+    menuExtraClock = {
+      ShowSeconds = true;
+    };
+
     screencapture = {
       location = "~/Desktop/screenshot";
       type = "png";
