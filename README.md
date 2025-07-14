@@ -90,3 +90,4 @@ After disabling, configure Raycast to use Cmd+Space in the Raycast app preferenc
 ### Copy credential files
 - `~/.aws`
 - `~/.ssh`
+- DBeaver related (Export/Import)

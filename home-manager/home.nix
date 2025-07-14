@@ -25,6 +25,7 @@
       awsume # Assume Role
       awscli2 # AWS CLI
       ssm-session-manager-plugin
+      gh
     ];
   };
 
