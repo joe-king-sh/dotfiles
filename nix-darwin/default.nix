@@ -57,6 +57,8 @@
 
     controlcenter = {
       BatteryShowPercentage = true;
+      Sound = true;
+      Bluetooth = true;
     };
 
     finder = {
