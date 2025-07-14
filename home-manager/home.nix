@@ -24,6 +24,7 @@
       neofetch # System information display
       awsume # Assume Role
       awscli2 # AWS CLI
+      ssm-session-manager-plugin
     ];
   };
 
