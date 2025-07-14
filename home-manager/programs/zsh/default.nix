@@ -44,8 +44,8 @@ _: {
       reload = "source ~/.zshrc";
 
       # Nix related
-      # ns = "sudo nix run github:LnL7/nix-darwin --extra-experimental-features 'flakes nix-command' -- switch --flake "".#joe-king-sh""";
-      # nsh = "nix run github:nix-community/home-manager --extra-experimental-features 'flakes nix-command' -- switch --flake "".#joe-king-sh""";
+      ms = "make switch";
+      msh = "make switch-home";
 
       # fzf related
       fzf-preview = "fzf --preview 'bat --color=always {}'";

@@ -23,6 +23,7 @@
       eza # ls alternative
       neofetch # System information display
       awsume # Assume Role
+      awscli2 # AWS CLI
     ];
   };
 
