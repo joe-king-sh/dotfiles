@@ -96,6 +96,18 @@ _: {
 
       # bat settings
       export BAT_THEME="Dracula"
+
+      # Awsume
+      ## AWSume alias to source the AWSume script
+      alias awsume="source awsume"
+
+      ## Auto-Complete function for AWSume (Zsh version)
+      _awsume() {
+          local -a opts
+          opts=($(awsume-autocomplete))
+          _describe 'awsume' opts
+      }
+      compdef _awsume awsume
     '';
   };
 }
