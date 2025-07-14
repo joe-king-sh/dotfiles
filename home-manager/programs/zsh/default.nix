@@ -14,7 +14,7 @@ _: {
       ls = "eza";
       cat = "bat";
       find = "fd";
-      grep = "ripgrep";
+      grep = "rg";
 
       # Git related
       g = "git";
@@ -108,6 +108,13 @@ _: {
           _describe 'awsume' opts
       }
       compdef _awsume awsume
+
+      # Load local zsh configuration if it exists
+      # Note: zshrc.local should be in the dotfiles directory
+      local_zshrc="$HOME/dotfiles/home-manager/programs/zsh/zshrc.local"
+      if [ -f "$local_zshrc" ]; then
+        source "$local_zshrc"
+      fi
     '';
   };
 }

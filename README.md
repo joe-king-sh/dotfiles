@@ -82,3 +82,11 @@ Spotlight's Cmd+Space shortcut conflicts with Raycast. Disable it manually:
 3. Uncheck "Show Spotlight search" (Cmd+Space)
 
 After disabling, configure Raycast to use Cmd+Space in the Raycast app preferences.
+
+### Install applications
+
+- Skitch
+
+### Copy credential files
+- `~/.aws`
+- `~/.ssh`
