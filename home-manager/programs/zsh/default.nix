@@ -23,6 +23,7 @@ _: {
       gaa = "git add -A";
       gcm = "git commit";
       gps = "git push";
+      gpl = "git pull";
       gl = "git log --oneline";
       gd = "git diff";
       gb = "git branch";

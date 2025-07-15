@@ -38,6 +38,7 @@
     ./programs/mise
     ./programs/claude
     ./programs/vim
+    ./programs/rancher
   ];
 
   programs.home-manager.enable = true;

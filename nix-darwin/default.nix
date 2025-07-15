@@ -19,6 +19,7 @@
       "visual-studio-code"
       "android-studio"
       "claude"
+      "rancher"
 
       # Terminal
       "warp"
