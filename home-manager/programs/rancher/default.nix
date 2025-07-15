@@ -8,7 +8,7 @@
   config = {
     home.sessionPath = [ "$HOME/.rd/bin" ];
 
-    programs.zsh.initExtra = ''
+    programs.zsh.initContent = ''
       # Rancher Desktop PATH
       export PATH="$HOME/.rd/bin:$PATH"
     '';
