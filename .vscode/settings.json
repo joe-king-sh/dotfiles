@@ -1,0 +1,31 @@
+{
+	"cSpell.words": [
+		"autoindent",
+		"Awsume",
+		"compdef",
+		"DUPS",
+		"ehthumbs",
+		"expandtab",
+		"HISTSIZE",
+		"hlsearch",
+		"ignorecase",
+		"incsearch",
+		"nobackup",
+		"nocompatible",
+		"noswapfile",
+		"nowritebackup",
+		"oneline",
+		"pkgs",
+		"PUSHD",
+		"relativenumber",
+		"SAVEHIST",
+		"setopt",
+		"shiftwidth",
+		"showmatch",
+		"smartcase",
+		"smartindent",
+		"viminfo",
+		"wildmenu",
+		"wildmode"
+	]
+}

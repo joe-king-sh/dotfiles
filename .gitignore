@@ -15,7 +15,6 @@ result-*
 home-manager/programs/zsh/zshrc.local
 
 # IDE
-.vscode/
 .idea/
 
 # Logs

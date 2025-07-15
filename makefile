@@ -32,7 +32,11 @@ debug:
 	@echo "=== Flake Show ==="
 	nix flake show
 
+check-fmt:
+	nix fmt -- --fail-on-change
+
 dry-run:
+	nix build .#darwinConfigurations.joe-king-sh.system --dry-run
 	nix build .#homeConfigurations.joe-king-sh.activationPackage --dry-run
 
-.PHONY: all switch switch-home build fmt update clean debug dry-run
+.PHONY: all switch switch-home build fmt update clean debug check-fmt dry-run
