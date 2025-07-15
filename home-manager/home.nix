@@ -26,6 +26,7 @@
       awscli2 # AWS CLI
       ssm-session-manager-plugin
       gh
+      mas # Mac App Store command line interface
     ];
   };
 

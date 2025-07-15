@@ -39,6 +39,12 @@
       "karabiner-elements"
       "raycast"
     ];
+
+    # App Store
+    masApps = {
+      "RunCat" = 1429033973;
+      "Skitch" = 425955336;
+    };
   };
 
   # macOS system settings

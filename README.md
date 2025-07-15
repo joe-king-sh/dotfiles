@@ -85,7 +85,7 @@ After disabling, configure Raycast to use Cmd+Space in the Raycast app preferenc
 
 ### Install applications
 
-- Skitch
+- 
 
 ### Copy credential files
 - `~/.aws`
