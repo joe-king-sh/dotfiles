@@ -39,4 +39,15 @@ dry-run:
 	nix build .#darwinConfigurations.joe-king-sh.system --dry-run
 	nix build .#homeConfigurations.joe-king-sh.activationPackage --dry-run
 
-.PHONY: all switch switch-home build fmt update clean debug check-fmt dry-run
+# Security setup (one-time)
+setup-security:
+	@echo "Setting up security tools..."
+	pre-commit install
+	@echo "Creating detect-secrets baseline..."
+	detect-secrets scan --disable-filter detect_secrets.filters.gibberish.should_exclude_secret . > .secrets.baseline
+	@echo "Security setup completed!"
+
+scan-secrets:
+	pre-commit run detect-secrets --all-files
+
+.PHONY: all switch switch-home build fmt update clean debug check-fmt dry-run setup-security scan-secrets

@@ -18,4 +18,7 @@ home-manager/programs/zsh/zshrc.local
 .idea/
 
 # Logs
-*.log 
+*.log
+
+# Pre-commit and security
+.pre-commit-cache/

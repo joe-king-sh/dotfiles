@@ -27,6 +27,8 @@
       ssm-session-manager-plugin
       gh
       mas # Mac App Store command line interface
+      pre-commit # Pre-commit hooks
+      python3Packages.detect-secrets # Secrets detection
     ];
   };
 
