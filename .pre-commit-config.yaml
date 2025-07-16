@@ -13,3 +13,13 @@ repos:
       - id: check-added-large-files
       - id: check-merge-conflict
       - id: detect-private-key
+
+  # Nix フォーマット
+  - repo: local
+    hooks:
+      - id: nix-fmt
+        name: Nix format
+        entry: make fmt
+        language: system
+        files: \.(nix|json|md|ts|js|tsx|jsx)$
+        pass_filenames: false
