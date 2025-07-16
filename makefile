@@ -33,7 +33,15 @@ debug:
 	nix flake show
 
 check-fmt:
-	nix fmt -- --fail-on-change
+	@echo "Checking if files need formatting..."
+	@nix fmt
+	@if ! git diff --quiet; then \
+		echo "ERROR: Files need formatting. Please run 'make fmt' and commit the changes."; \
+		git diff; \
+		exit 1; \
+	else \
+		echo "All files are properly formatted."; \
+	fi
 
 dry-run:
 	nix build .#darwinConfigurations.joe-king-sh.system --dry-run
