@@ -1,5 +1,4 @@
 repos:
-  # シークレット検出
   - repo: https://github.com/Yelp/detect-secrets
     rev: v1.5.0
     hooks:
@@ -13,3 +12,12 @@ repos:
       - id: check-added-large-files
       - id: check-merge-conflict
       - id: detect-private-key
+
+  - repo: local
+    hooks:
+      - id: nix-fmt
+        name: Nix format
+        entry: make fmt
+        language: system
+        files: \.(nix|json|md|ts|js|tsx|jsx)$
+        pass_filenames: false
