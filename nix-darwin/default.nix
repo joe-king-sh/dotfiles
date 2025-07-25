@@ -103,5 +103,11 @@
       location = "~/Desktop/screenshot";
       type = "png";
     };
+
+    CustomUserPreferences = {
+      "com.apple.Sound" = {
+        "Play sound on startup" = false;
+      };
+    };
   };
 }
