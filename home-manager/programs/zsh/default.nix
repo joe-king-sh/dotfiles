@@ -29,6 +29,9 @@ _: {
       gb = "git branch";
       gc = "git checkout";
 
+      # Package managers
+      pf = "pnpm --filter";
+
       # Directory navigation
       ".." = "cd ..";
       "..." = "cd ../..";

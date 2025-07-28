@@ -20,6 +20,7 @@
       "android-studio"
       "claude"
       "rancher"
+      "kiro"
 
       # Terminal
       "warp"
