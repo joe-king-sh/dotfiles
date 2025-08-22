@@ -39,5 +39,9 @@
   "cursor.composer.shouldChimeAfterChatFinishes": true,
   "cursor.composer.shouldAllowCustomModes": true,
   "git.autofetch": true,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "cursor.composer.shouldAutoSaveNonAgent": false,
+  "markdown.marp.themes": ["./classmethod-theme.css"],
+  "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": false,
+  "editor.defaultFormatter": "biomejs.biome"
 }

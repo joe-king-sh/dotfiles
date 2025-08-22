@@ -34,6 +34,7 @@
       "zoom"
       "notion"
       "gather"
+      "microsoft-teams"
 
       # Utility
       "1password"
