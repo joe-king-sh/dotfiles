@@ -21,6 +21,7 @@
       "claude"
       "rancher"
       "kiro"
+      "amazon-q"
 
       # Terminal
       "warp"
@@ -40,6 +41,12 @@
       "1password"
       "karabiner-elements"
       "raycast"
+
+      # office
+      "microsoft-powerpoint"
+      "microsoft-excel"
+      "microsoft-word"
+      "onedrive"
     ];
 
     # App Store

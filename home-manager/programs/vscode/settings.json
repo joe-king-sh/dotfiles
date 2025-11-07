@@ -1,12 +1,14 @@
 {
-  "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
-  "vim.useSystemClipboard": true,
-  "telemetry.telemetryLevel": "off",
-  "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome"
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
   },
-  "[typescript]": {
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
   "[json]": {
@@ -18,6 +20,18 @@
   "[nix]": {
     "editor.defaultFormatter": "jnoortheen.nix-ide"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "cursor.composer.shouldAllowCustomModes": true,
+  "cursor.composer.shouldAutoSaveNonAgent": false,
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.cpp.disabledLanguages": ["plaintext"],
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
   "extensions.recommendations": [
     "ms-python.python",
     "ms-vscode.vscode-typescript-next",
@@ -34,14 +48,15 @@
     "orta.vscode-jest",
     "shd101wyy.markdown-preview-enhanced"
   ],
-  "window.commandCenter": true,
-  "workbench.colorTheme": "Cursor Dark Midnight",
-  "cursor.composer.shouldChimeAfterChatFinishes": true,
-  "cursor.composer.shouldAllowCustomModes": true,
   "git.autofetch": true,
-  "diffEditor.ignoreTrimWhitespace": false,
-  "cursor.composer.shouldAutoSaveNonAgent": false,
-  "markdown.marp.themes": ["./classmethod-theme.css"],
+  "hediet.vscode-drawio.resizeImages": null,
   "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": false,
-  "editor.defaultFormatter": "biomejs.biome"
+  "markdown.marp.themes": ["./classmethod-theme.css"],
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.env.osx": {
+    "Q_NEW_SESSION": "1"
+  },
+  "vim.useSystemClipboard": true,
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Default Light Modern"
 }

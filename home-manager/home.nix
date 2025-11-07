@@ -42,6 +42,7 @@
     ./programs/claude
     ./programs/vim
     ./programs/rancher
+    ./programs/flutter
   ];
 
   programs.home-manager.enable = true;
