@@ -58,5 +58,6 @@
   },
   "vim.useSystemClipboard": true,
   "window.commandCenter": true,
-  "workbench.colorTheme": "Default Light Modern"
+  "workbench.colorTheme": "Default Light Modern",
+  "extensions.autoUpdate": false
 }

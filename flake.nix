@@ -77,6 +77,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.${actualUsername} = import ./home-manager/home.nix;
             home-manager.extraSpecialArgs = specialArgs;
+            nixpkgs.config.allowUnfree = true;
           }
         ];
       };

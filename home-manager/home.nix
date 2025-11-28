@@ -6,6 +6,8 @@
   ...
 }:
 {
+  nixpkgs.config.allowUnfree = true;
+
   home = {
     inherit username;
     homeDirectory = lib.mkForce homeDirectory;
@@ -22,13 +24,13 @@
       fzf # Fuzzy finder
       eza # ls alternative
       neofetch # System information display
-      awsume # Assume Role
       awscli2 # AWS CLI
       ssm-session-manager-plugin
       gh
       mas # Mac App Store command line interface
       pre-commit # Pre-commit hooks
       python3Packages.detect-secrets # Secrets detection
+      _1password-cli # 1Password CLI
     ];
   };
 
@@ -43,6 +45,7 @@
     ./programs/vim
     ./programs/rancher
     ./programs/flutter
+    ./programs/pnpm
   ];
 
   programs.home-manager.enable = true;

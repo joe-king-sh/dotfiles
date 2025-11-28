@@ -116,24 +116,19 @@ _: {
       # bat settings
       export BAT_THEME="Dracula"
 
-      # Awsume
-      ## AWSume alias to source the AWSume script
-      alias awsume="source awsume"
-
-      ## Auto-Complete function for AWSume (Zsh version)
-      _awsume() {
-          local -a opts
-          opts=($(awsume-autocomplete))
-          _describe 'awsume' opts
-      }
-      compdef _awsume awsume
-
       # Load local zsh configuration if it exists
       # Note: zshrc.local should be in the dotfiles directory
       local_zshrc="$HOME/dotfiles/home-manager/programs/zsh/zshrc.local"
       if [ -f "$local_zshrc" ]; then
         source "$local_zshrc"
       fi
+
+      # Disable npm
+      alias npx='echo "WARNING: npx は実行しないでください" && false'
+      alias npm='echo "WARNING: npm は実行しないでください" && false'
+
+      # 1password cli
+      source /Users/kinjo.shuya/.config/op/plugins.sh
     '';
   };
 }
