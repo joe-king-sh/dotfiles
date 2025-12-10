@@ -31,6 +31,7 @@
       pre-commit # Pre-commit hooks
       python3Packages.detect-secrets # Secrets detection
       _1password-cli # 1Password CLI
+      postgresql # PostgreSQL client (psql)
     ];
   };
 

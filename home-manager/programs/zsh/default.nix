@@ -129,6 +129,12 @@ _: {
 
       # 1password cli
       source /Users/kinjo.shuya/.config/op/plugins.sh
+
+      awsumep() {
+        export AWS_PROFILE=$1
+        echo "✅ AWS Profile set to: $AWS_PROFILE"
+        aws sts get-caller-identity
+      }
     '';
   };
 }

@@ -22,6 +22,7 @@
       "rancher"
       "kiro"
       "amazon-q"
+      "postman"
 
       # Terminal
       "warp"
