@@ -57,6 +57,41 @@
     };
   };
 
+  # Launch agents (startup applications)
+  launchd.user.agents = {
+    # Auto-start 1Password
+    "1password" = {
+      serviceConfig = {
+        ProgramArguments = [ "/Applications/1Password.app/Contents/MacOS/1Password" ];
+        RunAtLoad = true;
+      };
+    };
+
+    # Auto-start Karabiner-Elements
+    "karabiner-elements" = {
+      serviceConfig = {
+        ProgramArguments = [ "/Applications/Karabiner-Elements.app/Contents/MacOS/Karabiner-Elements" ];
+        RunAtLoad = true;
+      };
+    };
+
+    # Auto-start Raycast
+    "raycast" = {
+      serviceConfig = {
+        ProgramArguments = [ "/Applications/Raycast.app/Contents/MacOS/Raycast" ];
+        RunAtLoad = true;
+      };
+    };
+
+    # Auto-start Rancher Desktop
+    "rancher-desktop" = {
+      serviceConfig = {
+        ProgramArguments = [ "/Applications/Rancher Desktop.app/Contents/MacOS/Rancher Desktop" ];
+        RunAtLoad = true;
+      };
+    };
+  };
+
   # macOS system settings
   system.defaults = {
 
