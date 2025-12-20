@@ -50,6 +50,43 @@ _: {
                 }
               ];
             }
+            {
+              description = "左右Option単独押しでf13 (Aqua Voice)";
+              manipulators = [
+                {
+                  from = {
+                    key_code = "left_option";
+                    modifiers = {
+                      optional = [ "any" ];
+                    };
+                  };
+                  to = [
+                    {
+                      key_code = "left_option";
+                      lazy = true;
+                    }
+                  ];
+                  to_if_alone = [ { key_code = "f13"; } ];
+                  type = "basic";
+                }
+                {
+                  from = {
+                    key_code = "right_option";
+                    modifiers = {
+                      optional = [ "any" ];
+                    };
+                  };
+                  to = [
+                    {
+                      key_code = "right_option";
+                      lazy = true;
+                    }
+                  ];
+                  to_if_alone = [ { key_code = "f13"; } ];
+                  type = "basic";
+                }
+              ];
+            }
           ];
         };
         name = "Default profile";

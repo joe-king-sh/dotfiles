@@ -59,5 +59,6 @@
   "vim.useSystemClipboard": true,
   "window.commandCenter": true,
   "workbench.colorTheme": "Default Light Modern",
-  "extensions.autoUpdate": false
+  "extensions.autoUpdate": false,
+  "claudeCode.preferredLocation": "panel"
 }
