@@ -32,6 +32,8 @@
       python3Packages.detect-secrets # Secrets detection
       _1password-cli # 1Password CLI
       postgresql # PostgreSQL client (psql)
+      zed-editor # Modern code editor
+      terminal-notifier # macOS notifications from terminal
     ];
   };
 

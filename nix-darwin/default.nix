@@ -24,7 +24,7 @@
       "claude"
       "rancher"
       "kiro"
-      "amazon-q"
+      "kiro-cli"
       "postman"
 
       # Terminal

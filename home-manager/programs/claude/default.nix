@@ -11,6 +11,9 @@
     claude-code
   ];
 
+  # Claude Code settings
+  home.file.".claude/settings.local.json".source = ../../../.claude/settings.local.json;
+
   # Also set in shell environment
   programs.zsh.sessionVariables = {
     CLAUDE_CONFIG_DIR = "$HOME/.config/claude";

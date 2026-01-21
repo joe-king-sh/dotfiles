@@ -1,100 +1,103 @@
 _: {
   # Karabiner-Elements設定
-  xdg.configFile."karabiner/karabiner.json".text = builtins.toJSON {
-    profiles = [
-      {
-        complex_modifications = {
-          rules = [
-            {
-              description = "シフトキーを単体で押したときに、英数・かなキーを送信する。（左シフトキーは英数、右シフトキーはかな)";
-              manipulators = [
-                {
-                  from = {
-                    key_code = "left_shift";
-                    modifiers = {
-                      optional = [ "any" ];
-                    };
-                  };
-                  parameters = {
-                    "basic.to_if_held_down_threshold_milliseconds" = 100;
-                  };
-                  to = [
-                    {
+  xdg.configFile."karabiner/karabiner.json" = {
+    force = true;
+    text = builtins.toJSON {
+      profiles = [
+        {
+          complex_modifications = {
+            rules = [
+              {
+                description = "シフトキーを単体で押したときに、英数・かなキーを送信する。（左シフトキーは英数、右シフトキーはかな)";
+                manipulators = [
+                  {
+                    from = {
                       key_code = "left_shift";
-                      lazy = true;
-                    }
-                  ];
-                  to_if_alone = [ { key_code = "japanese_eisuu"; } ];
-                  to_if_held_down = [ { key_code = "left_shift"; } ];
-                  type = "basic";
-                }
-                {
-                  from = {
-                    key_code = "right_shift";
-                    modifiers = {
-                      optional = [ "any" ];
+                      modifiers = {
+                        optional = [ "any" ];
+                      };
                     };
-                  };
-                  parameters = {
-                    "basic.to_if_held_down_threshold_milliseconds" = 100;
-                  };
-                  to = [
-                    {
+                    parameters = {
+                      "basic.to_if_held_down_threshold_milliseconds" = 100;
+                    };
+                    to = [
+                      {
+                        key_code = "left_shift";
+                        lazy = true;
+                      }
+                    ];
+                    to_if_alone = [ { key_code = "japanese_eisuu"; } ];
+                    to_if_held_down = [ { key_code = "left_shift"; } ];
+                    type = "basic";
+                  }
+                  {
+                    from = {
                       key_code = "right_shift";
-                      lazy = true;
-                    }
-                  ];
-                  to_if_alone = [ { key_code = "japanese_kana"; } ];
-                  to_if_held_down = [ { key_code = "right_shift"; } ];
-                  type = "basic";
-                }
-              ];
-            }
-            {
-              description = "左右Option単独押しでf13 (Aqua Voice)";
-              manipulators = [
-                {
-                  from = {
-                    key_code = "left_option";
-                    modifiers = {
-                      optional = [ "any" ];
+                      modifiers = {
+                        optional = [ "any" ];
+                      };
                     };
-                  };
-                  to = [
-                    {
+                    parameters = {
+                      "basic.to_if_held_down_threshold_milliseconds" = 100;
+                    };
+                    to = [
+                      {
+                        key_code = "right_shift";
+                        lazy = true;
+                      }
+                    ];
+                    to_if_alone = [ { key_code = "japanese_kana"; } ];
+                    to_if_held_down = [ { key_code = "right_shift"; } ];
+                    type = "basic";
+                  }
+                ];
+              }
+              {
+                description = "左右Option単独押しでf13 (Aqua Voice)";
+                manipulators = [
+                  {
+                    from = {
                       key_code = "left_option";
-                      lazy = true;
-                    }
-                  ];
-                  to_if_alone = [ { key_code = "f13"; } ];
-                  type = "basic";
-                }
-                {
-                  from = {
-                    key_code = "right_option";
-                    modifiers = {
-                      optional = [ "any" ];
+                      modifiers = {
+                        optional = [ "any" ];
+                      };
                     };
-                  };
-                  to = [
-                    {
+                    to = [
+                      {
+                        key_code = "left_option";
+                        lazy = true;
+                      }
+                    ];
+                    to_if_alone = [ { key_code = "f13"; } ];
+                    type = "basic";
+                  }
+                  {
+                    from = {
                       key_code = "right_option";
-                      lazy = true;
-                    }
-                  ];
-                  to_if_alone = [ { key_code = "f13"; } ];
-                  type = "basic";
-                }
-              ];
-            }
-          ];
-        };
-        name = "Default profile";
-        selected = true;
-        virtual_hid_keyboard = {
-          keyboard_type_v2 = "ansi";
-        };
-      }
-    ];
+                      modifiers = {
+                        optional = [ "any" ];
+                      };
+                    };
+                    to = [
+                      {
+                        key_code = "right_option";
+                        lazy = true;
+                      }
+                    ];
+                    to_if_alone = [ { key_code = "f13"; } ];
+                    type = "basic";
+                  }
+                ];
+              }
+            ];
+          };
+          name = "Default profile";
+          selected = true;
+          virtual_hid_keyboard = {
+            keyboard_type_v2 = "ansi";
+          };
+        }
+      ];
+    };
   };
 }

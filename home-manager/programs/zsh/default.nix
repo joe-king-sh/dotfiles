@@ -14,7 +14,7 @@ _: {
       ls = "eza";
       cat = "bat";
       find = "fd";
-      grep = "rg";
+      # grep = "rg";
 
       # Git related
       g = "git";
@@ -124,8 +124,8 @@ _: {
       fi
 
       # Disable npm
-      alias npx='echo "WARNING: npx は実行しないでください" && false'
-      alias npm='echo "WARNING: npm は実行しないでください" && false'
+      alias npx='echo "WARNING: npx は実行しないでください。代わりにpnpm dlxを使用してください。" && false'
+      alias npm='echo "WARNING: npm は実行しないでください。代わりにpnpmを使用してください。" && false'
 
       # 1password cli
       source /Users/kinjo.shuya/.config/op/plugins.sh
@@ -136,5 +136,6 @@ _: {
         aws sts get-caller-identity
       }
     '';
+
   };
 }

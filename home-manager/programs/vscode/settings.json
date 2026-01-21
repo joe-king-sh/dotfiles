@@ -60,5 +60,6 @@
   "window.commandCenter": true,
   "workbench.colorTheme": "Default Light Modern",
   "extensions.autoUpdate": false,
-  "claudeCode.preferredLocation": "panel"
+  "claudeCode.preferredLocation": "panel",
+  "claudeCode.selectedModel": "default"
 }
