@@ -47,6 +47,7 @@
     ./programs/rancher
     ./programs/flutter
     ./programs/pnpm
+    ./programs/tailscale
   ];
 
   programs.home-manager.enable = true;

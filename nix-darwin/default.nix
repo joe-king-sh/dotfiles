@@ -13,6 +13,9 @@
     onActivation = {
       autoUpdate = true;
     };
+    brews = [
+      "tailscale"
+    ];
     casks = [
       # Dev-tools
       "cursor"
@@ -42,6 +45,7 @@
       "1password"
       "karabiner-elements"
       "raycast"
+      "tailscale"
 
       # office
       "microsoft-powerpoint"
