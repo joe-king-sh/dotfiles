@@ -12,7 +12,7 @@
   ];
 
   # Claude Code settings
-  home.file.".claude/settings.local.json".source = ../../../.claude/settings.local.json;
+  home.file.".config/claude/settings.local.json".source = ../../../.claude/settings.local.json;
 
   # Also set in shell environment
   programs.zsh.sessionVariables = {

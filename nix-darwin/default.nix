@@ -29,6 +29,7 @@
 
       # Terminal
       "warp"
+      "ghostty"
 
       # Browser
       "google-chrome"
