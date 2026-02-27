@@ -14,6 +14,9 @@ result-*
 # Personal configuration files (not tracked in Git)
 home-manager/programs/zsh/zshrc.local
 
+# Claude Code local settings
+.claude/settings.local.json
+
 # IDE
 .idea/
 

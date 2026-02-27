@@ -1,6 +1,7 @@
 {
   username,
   homeDirectory,
+  llmAgentsPkgs,
   lib,
   pkgs,
   ...
@@ -34,6 +35,10 @@
       postgresql # PostgreSQL client (psql)
       zed-editor # Modern code editor
       terminal-notifier # macOS notifications from terminal
+      llmAgentsPkgs.happy-coder # Mobile access to Claude Code
+      gcalcli # Google Calendar CLI
+      terraform # Infrastructure as Code
+      wrangler # Cloudflare CLI
     ];
   };
 
@@ -50,6 +55,7 @@
     ./programs/flutter
     ./programs/pnpm
     ./programs/tailscale
+    ./programs/tmux
   ];
 
   programs.home-manager.enable = true;

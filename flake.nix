@@ -15,6 +15,10 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    llm-agents = {
+      url = "github:numtide/llm-agents.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -24,6 +28,7 @@
       home-manager,
       darwin,
       treefmt-nix,
+      llm-agents,
       ...
     }:
     let
@@ -53,8 +58,10 @@
 
       pkgs = pkgsFor system;
 
+      llmAgentsPkgs = llm-agents.packages.${system};
+
       specialArgs = {
-        inherit system homeDirectory;
+        inherit system homeDirectory llmAgentsPkgs;
         username = actualUsername;
       };
     in

@@ -22,6 +22,7 @@
       "visual-studio-code"
       "android-studio"
       "claude"
+      "claude-code"
       "rancher"
       "kiro"
       "kiro-cli"
@@ -45,6 +46,7 @@
       # Utility
       "1password"
       "karabiner-elements"
+      "obsidian"
       "raycast"
       "tailscale"
 
