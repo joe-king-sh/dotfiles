@@ -18,12 +18,7 @@
     packages = with pkgs; [
       jq # JSON processor
       tree # Directory tree display
-      htop # System monitor
-      bat # cat alternative with syntax highlighting
-      fd # find alternative
-      ripgrep # grep alternative
       fzf # Fuzzy finder
-      eza # ls alternative
       neofetch # System information display
       awscli2 # AWS CLI
       ssm-session-manager-plugin

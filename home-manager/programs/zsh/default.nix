@@ -7,15 +7,6 @@ _: {
 
     # Commonly used aliases
     shellAliases = {
-      # Basic commands (using modern alternative tools)
-      ll = "eza -la";
-      la = "eza -la";
-      l = "eza -l";
-      ls = "eza";
-      cat = "bat";
-      find = "fd";
-      # grep = "rg";
-
       # Git related
       g = "git";
       gs = "git status";
@@ -41,7 +32,6 @@ _: {
       tree = "tree -C";
       h = "history";
       cl = "clear";
-      top = "htop";
       cc = "claude";
 
       # System related
@@ -51,8 +41,6 @@ _: {
       ms = "make switch";
       msh = "make switch-home";
 
-      # fzf related
-      fzf-preview = "fzf --preview 'bat --color=always {}'";
     };
 
     # Environment variables
@@ -108,13 +96,10 @@ _: {
       PROMPT='%F{green}%n@%m%f:%F{blue}%~%f$(git_branch)$ '
 
       # fzf settings
-      export FZF_DEFAULT_COMMAND='fd --type f'
+      export FZF_DEFAULT_COMMAND='find . -type f -not -path "*/\.git/*"'
       export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-      export FZF_ALT_C_COMMAND='fd --type d'
+      export FZF_ALT_C_COMMAND='find . -type d -not -path "*/\.git/*"'
       export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
-
-      # bat settings
-      export BAT_THEME="Dracula"
 
       # Load local zsh configuration if it exists
       # Note: zshrc.local should be in the dotfiles directory
