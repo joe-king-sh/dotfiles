@@ -8,7 +8,7 @@ Install package managers:
 
 ```zsh
 # Homebrew
-/bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Nix
 sh <(curl -L https://nixos.org/nix/install)
