@@ -14,7 +14,6 @@
       autoUpdate = true;
     };
     brews = [
-      "tailscale"
     ];
     casks = [
       # Dev-tools
@@ -27,10 +26,13 @@
       "kiro"
       "kiro-cli"
       "postman"
+      "dbeaver-community"
 
       # Terminal
       "warp"
       "ghostty"
+      "iterm2"
+      "cmux"
 
       # Browser
       "google-chrome"
@@ -48,8 +50,6 @@
       "karabiner-elements"
       "obsidian"
       "raycast"
-      "tailscale"
-
       # office
       "microsoft-powerpoint"
       "microsoft-excel"

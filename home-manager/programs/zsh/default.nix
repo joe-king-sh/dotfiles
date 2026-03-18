@@ -27,8 +27,10 @@ _: {
       ".." = "cd ..";
       "..." = "cd ../..";
       "...." = "cd ../../..";
+      brain = "cd ~/personal/myrepo/brain";
 
       # Useful commands
+      ll = "ls -lart";
       tree = "tree -C";
       h = "history";
       cl = "clear";
