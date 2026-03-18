@@ -1,10 +1,11 @@
 _: {
   programs.git = {
     enable = true;
-    userName = "Shuya Kinjo";
-    userEmail = "a8109058@gmail.com";
-
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Shuya Kinjo";
+        email = "a8109058@gmail.com";
+      };
       init = {
         defaultBranch = "main";
       };
