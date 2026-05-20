@@ -23,6 +23,9 @@ _: {
       # Package managers
       pf = "pnpm --filter";
 
+      # AWS
+      asg = "aws sts get-caller-identity";
+
       # Directory navigation
       ".." = "cd ..";
       "..." = "cd ../..";
@@ -53,6 +56,10 @@ _: {
 
     # Initialization script
     initContent = ''
+      # PATH: prepend ~/.local/bin so native-installed tools (e.g. claude-code)
+      # take precedence over vendored binaries in cmux.app, /usr/local/bin, etc.
+      export PATH="$HOME/.local/bin:$PATH"
+
       # Prompt settings
       autoload -U colors && colors
 
@@ -115,7 +122,7 @@ _: {
       alias npm='echo "WARNING: npm は実行しないでください。代わりにpnpmを使用してください。" && false'
 
       # 1password cli
-      source /Users/kinjo.shuya/.config/op/plugins.sh
+      source /Users/kinjo.shuya/.op/plugins.sh
 
       awsumep() {
         export AWS_PROFILE=$1

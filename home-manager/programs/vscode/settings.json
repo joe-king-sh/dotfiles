@@ -60,7 +60,9 @@
   "git.autofetch": true,
   "hediet.vscode-drawio.resizeImages": null,
   "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": false,
-  "markdown.marp.themes": ["./classmethod-theme.css"],
+  "markdown.marp.themes": [
+    "https://classmethod.github.io/classmethod-marp-theme/classmethod-theme.css"
+  ],
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.env.osx": {
     "Q_NEW_SESSION": "1"
@@ -72,5 +74,6 @@
   "claudeCode.preferredLocation": "panel",
   "claudeCode.selectedModel": "default",
   "swaggerViewer.previewInBrowser": true,
-  "biome.enabled": false
+  "biome.enabled": false,
+  "markdown.marp.html": "all"
 }

@@ -21,7 +21,8 @@
       "visual-studio-code"
       "android-studio"
       "claude"
-      "claude-code"
+      # claude-code is installed via the native installer (`curl -fsSL https://claude.ai/install.sh | bash`)
+      # which places the binary at ~/.local/bin/claude and auto-updates in the background.
       "rancher"
       "kiro"
       "kiro-cli"

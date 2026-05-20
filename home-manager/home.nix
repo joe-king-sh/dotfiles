@@ -1,7 +1,6 @@
 {
   username,
   homeDirectory,
-  llmAgentsPkgs,
   lib,
   pkgs,
   ...
@@ -22,6 +21,7 @@
       neofetch # System information display
       awscli2 # AWS CLI
       ssm-session-manager-plugin
+      google-cloud-sdk # Google Cloud CLI
       gh
       mas # Mac App Store command line interface
       pre-commit # Pre-commit hooks
@@ -30,10 +30,10 @@
       postgresql # PostgreSQL client (psql)
       zed-editor # Modern code editor
       terminal-notifier # macOS notifications from terminal
-      llmAgentsPkgs.happy-coder # Mobile access to Claude Code
       gcalcli # Google Calendar CLI
       terraform # Infrastructure as Code
       wrangler # Cloudflare CLI
+      viddy # Modern watch command
     ];
   };
 

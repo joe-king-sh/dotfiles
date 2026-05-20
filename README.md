@@ -105,7 +105,15 @@ After disabling, configure Raycast to use Cmd+Space in the Raycast app preferenc
 
 ### Install applications
 
--
+#### Karabiner-Elements
+
+Karabiner-Elements v15 以降は `.pkg` 形式の配布になり、Homebrew cask では pkg のダウンロードまでしか行われません。インストール後、または cask のバージョン更新後に以下のコマンドで pkg を手動展開する必要があります。
+
+```zsh
+sudo installer -pkg "$(ls /opt/homebrew/Caskroom/karabiner-elements/*/Karabiner-Elements.pkg | head -1)" -target /
+```
+
+その後 Karabiner-Elements.app を一度起動し、システム設定で入力監視権限とドライバ拡張を許可してください。
 
 ### Copy credential files
 
