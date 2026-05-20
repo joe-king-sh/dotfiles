@@ -121,14 +121,14 @@ _: {
       alias npx='echo "WARNING: npx は実行しないでください。代わりにpnpm dlxを使用してください。" && false'
       alias npm='echo "WARNING: npm は実行しないでください。代わりにpnpmを使用してください。" && false'
 
-      # 1password cli
-      source /Users/kinjo.shuya/.op/plugins.sh
-
       awsumep() {
         export AWS_PROFILE=$1
         echo "✅ AWS Profile set to: $AWS_PROFILE"
         aws sts get-caller-identity
       }
+
+      # awsume: must be sourced so AWS_* env vars propagate to the current shell
+      alias awsume="source $(command -v awsume)"
     '';
 
   };

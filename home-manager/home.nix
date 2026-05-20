@@ -20,6 +20,7 @@
       fzf # Fuzzy finder
       neofetch # System information display
       awscli2 # AWS CLI
+      awsume # AWS assume role helper
       ssm-session-manager-plugin
       google-cloud-sdk # Google Cloud CLI
       gh
@@ -51,6 +52,7 @@
     ./programs/pnpm
     ./programs/tailscale
     ./programs/tmux
+    ./programs/aws
   ];
 
   programs.home-manager.enable = true;
